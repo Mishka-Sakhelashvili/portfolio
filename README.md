@@ -1,1 +1,1 @@
-https://mishka-sakhelashvili.github.io/portfolio/#about
+https://mishka-sakhelashvili.github.io/portfolio/
