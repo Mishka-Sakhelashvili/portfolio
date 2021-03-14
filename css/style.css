@@ -162,11 +162,33 @@ section .title::after {
 
 /* menu btn styling */
 .menu-btn {
-  color: var(--white);
-  font-size: 23px;
   cursor: pointer;
   display: none;
 }
+.menu-btn .bar1,
+.menu-btn .bar2,
+.menu-btn .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.navbar .active .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 5px);
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+.navbar .active .bar2 {
+  opacity: 0;
+}
+
+.navbar .active .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -5px);
+  transform: rotate(45deg) translate(-7px, -5px);
+}
+
 
 .scroll-up-btn {
   position: fixed;
