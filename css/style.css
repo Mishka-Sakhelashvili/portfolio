@@ -165,6 +165,7 @@ section .title::after {
   cursor: pointer;
   display: none;
 }
+
 .menu-btn .bar1,
 .menu-btn .bar2,
 .menu-btn .bar3 {
@@ -396,26 +397,16 @@ section .title::after {
 
 .about .about-content .right p {
   text-align: justify;
-  color: var(--grey)
 }
 
-.about .about-content .right a {
-  display: inline-block;
-  background: var(--primaryColor);
-  color: var(--white);
-  font-size: 20px;
-  font-weight: 500;
-  padding: 10px 30px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid var(--primaryColor);
-  transition: all 0.3s ease;
+.about .about-content .right ul {
+ margin-left: 10px;
 }
 
-.about .about-content .right a:hover {
-  color: var(--primaryColor);
-  background: none;
+.about .about-content .right ul li {
+  color: var(--grey);
 }
+
 
 /* services section styling */
 .services {
