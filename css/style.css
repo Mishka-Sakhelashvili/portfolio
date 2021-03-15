@@ -400,7 +400,7 @@ section .title::after {
 }
 
 .about .about-content .right ul {
- margin-left: 10px;
+  margin-left: 10px;
 }
 
 .about .about-content .right ul li {
@@ -438,6 +438,7 @@ section .title::after {
   background: var(--primaryColor);
 }
 
+
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
@@ -446,21 +447,21 @@ section .title::after {
   transform: scale(1.05);
 }
 
-.services .serv-content .card i {
-  font-size: 50px;
-  color: var(--primaryColor);
-  transition: color 0.3s ease;
-}
-
-.services .serv-content .card:hover i {
-  color: var(--white);
-}
-
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+  color: var(--primaryColor);
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
+
+.services .serv-content .card:hover .text {
+  color: var(--dark);
+}
+
+
+
 
 /* skills section styling */
 .skills {
