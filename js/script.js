@@ -22,6 +22,15 @@ $(document).ready(function () {
     $("html").css("scrollBehavior", "auto");
   });
 
+
+  // esc button
+  $(document).keyup(function (e) {
+    if (e.which == 27) {
+      $("html").animate({ scrollTop: 0 });
+      $("html").css("scrollBehavior", "auto");
+    };
+  });
+
   $(".navbar .menu li a").click(function () {
     // applying again smooth scroll on menu items click
     $("html").css("scrollBehavior", "smooth");
@@ -35,13 +44,6 @@ $(document).ready(function () {
 
   // typing text animation script
   var typed = new Typed(".typing", {
-    strings: ["Front Developer", "Back Developer", "Mobile Developer"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true,
-  });
-
-  var typed = new Typed(".typing-2", {
     strings: ["Front Developer", "Back Developer", "Mobile Developer"],
     typeSpeed: 100,
     backSpeed: 60,
@@ -82,21 +84,35 @@ $(document).ready(function () {
       modifier: 1,
       slideShadows: true,
     },
-    initialSlide: 1,
-    // loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInterraction: false,
-    // },
+    initialSlide: 2,
+    loop: true,
+    autoplay: {
+      delay: 6000,
+      disableOnInterraction: false,
+    },
   };
 
-  var swiper = new Swiper("#web", swiperConfig);
+  var swiper = new Swiper("#FrontEnd", swiperConfig);
 
-  // var swiper = new Swiper("#react", swiperConfig);
+  var swiper = new Swiper("#FullStack", swiperConfig);
 
-  // var swiper = new Swiper("#fullstack", swiperConfig);
-
-  var swiper = new Swiper("#mobile", swiperConfig);
+  var swiper = new Swiper("#Mobile", swiperConfig);
 
   $("#year").text(new Date().getFullYear());
+
+  if (window.innerWidth > 800) {
+    VanillaTilt.init(document.querySelectorAll(".skills .card"), {
+      max: 25,
+      speed: 400
+    });
+  }
+
+  
+
+  $('#services .option').click(function () {
+    $('#services .option').removeClass('activeServ');
+    $(this).addClass('activeServ');
+  });
 });
+
+

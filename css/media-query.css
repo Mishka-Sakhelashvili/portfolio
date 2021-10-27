@@ -1,0 +1,21 @@
+
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+
+}
+
+@media (max-width: 947px) {
+  .max-width {
+    max-width: 930px;
+  }
+
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+}

@@ -1,0 +1,12 @@
+/* footer section styling */
+footer {
+  background: var(--white);
+  padding: 15px 23px;
+  color: #bebcbc;
+  text-align: center;
+}
+
+footer p a {
+  color: var(--dark);
+  font-family: 'Finger Paint', cursive;
+}

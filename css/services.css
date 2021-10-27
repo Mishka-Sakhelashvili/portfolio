@@ -1,0 +1,221 @@
+/* services section styling */
+.services {
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.services .max-width {
+  width: 100%;
+}
+
+.services .title::before {
+  background: var(--white);
+}
+
+.services .title::after {
+  background: var(--dark);
+  content: "what i provide";
+}
+
+.services .serv-content {
+  display: flex;
+  justify-content: center;
+}
+
+.services .options {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  max-width: 900px;
+  width: calc(100% - 100px);
+  height: 400px;
+}
+
+.services .option {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  background: var(--white);
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.services .option.activeServ {
+  flex-grow: 10000;
+  transform: scale(1);
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 40px;
+  background-size: auto 100%;
+}
+
+.services .option.activeServ .shadow {
+  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+
+.services .option.activeServ .label {
+  bottom: 20px;
+  left: 20px;
+}
+
+.services .option.activeServ .info>div {
+  left: 0px;
+  opacity: 1;
+}
+
+.services .option:not(.activeServ) {
+  flex-grow: 1;
+  border-radius: 30px;
+  background-color: var(--primaryColor);
+  /* opacity: 0.9; */
+}
+
+
+.services .option:not(.activeServ):hover {
+  background-color: var(--white);
+}
+
+.services .option:not(.activeServ):hover .icon {
+  color: var(--white);
+}
+
+.services .option:not(.activeServ) .shadow {
+  bottom: -40px;
+  box-shadow: inset 0 -120px 0 -120px black, inset 0 -120px 0 -100px black;
+}
+
+.services .option:not(.activeServ) .label {
+  bottom: 10px;
+  left: 10px;
+}
+
+.services .option:not(.activeServ) .info>div {
+  left: 20px;
+  opacity: 0;
+}
+
+.services .shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 80px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.services .label {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.services .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: black;
+  color: var(--primaryColor);
+  transition: all 0.5s;
+}
+
+.services .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: black;
+  white-space: pre;
+}
+
+.services .info>div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.services .main {
+  font-size: 24px;
+  color: var(--white);
+}
+
+.services .sub {
+  transition-delay: 0.1s;
+}
+
+.services .option.activeServ .text {
+  position: absolute;
+  top: -355px;
+  left: -25px;
+  padding: 50px;
+  color: black;
+  font-size: 20px;
+  text-indent: 20px;
+  text-align: justify;
+}
+
+.services .mobile {
+  display: none;
+}
+
+.services .mobile .card {
+  width: 100%;
+  background: var(--dark);
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.services .mobile .card:hover {
+  background: var(--primaryColor);
+}
+
+
+.services .mobile .card .box {
+  transition: all 0.3s ease;
+}
+
+.services .mobile .card:hover .box {
+  transform: scale(1.05);
+}
+
+.services .mobile .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+  color: var(--primaryColor);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.services .mobile .card:hover .text {
+  color: var(--dark);
+}
+
+
+@media (max-width: 1000px) {
+  .services .options {
+    display: none;
+  }
+
+  .services .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}

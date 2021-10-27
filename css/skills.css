@@ -1,0 +1,275 @@
+/* skills section styling */
+.skills {
+  background: var(--white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.skills .max-width{
+  width: 100%;
+}
+
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .title::after {
+  content: "what i know";
+}
+
+.skills .owl-carousel .owl-stage-outer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.skills .carousel .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.skills .carousel .card .box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: var(--dark);
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  box-shadow: 5px 5px 5px var(--dark);
+}
+
+.skills .carousel .card .box .name-shadow {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  z-index: 10;
+  font-size: 36px;
+}
+
+.skills .carousel .card .box .name {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+  font-size: 36px;
+}
+
+.skills .carousel .card .box:hover .name-shadow {
+  opacity: 1;
+}
+
+.skills .carousel .card .box:hover .name {
+  transform: translate3d(0, 0, 100px);
+}
+
+.skills .carousel .card .box .shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 280px;
+  transition: all 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  z-index: 10;
+  transform: translate3d(-50%, -50%, 0px);
+  opacity: 0;
+}
+
+.skills .carousel .card .box .img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 280px;
+  z-index: 15;
+  transition: all 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+.skills .carousel .card .box:hover .img {
+  transform: translate3d(-50%, -50%, 100px);
+}
+
+.skills .carousel .card .box:hover .shadow {
+  opacity: 1;
+}
+
+/* react */
+.skills .carousel .card.react .box .name,
+.skills .carousel .card.react .box .img {
+  color: var(--reactColor);
+}
+
+.skills .carousel .card.react .box .name-shadow,
+.skills .carousel .card.react .box .shadow {
+  color: var(--reactColorL);
+}
+
+
+/* node */
+.skills .carousel .card.node .box .name,
+.skills .carousel .card.node .box .img {
+  color: var(--nodeColor);
+}
+
+.skills .carousel .card.node .box .name-shadow,
+.skills .carousel .card.node .box .shadow {
+  color: var(--nodeColorL);
+}
+
+.skills .carousel .card.node .box .img,
+.skills .carousel .card.node .box .shadow {
+  font-size: 220px;
+}
+
+/* php */
+.skills .carousel .card.php .box .name,
+.skills .carousel .card.php .box .img {
+  color: var(--phpColor);
+}
+
+.skills .carousel .card.php .box .img,
+.skills .carousel .card.php .box .shadow {
+  font-size: 220px;
+}
+
+.skills .carousel .card.php .box .name-shadow,
+.skills .carousel .card.php .box .shadow {
+  color: var(--phpColorL);
+}
+
+
+/* sql */
+.skills .carousel .card.sql .box .name,
+.skills .carousel .card.sql .box .img {
+  color: var(--sqlColor);
+}
+
+.skills .carousel .card.sql .box .name-shadow,
+.skills .carousel .card.sql .box .shadow {
+  color: var(--sqlColorL);
+}
+
+/* mongodb */
+.skills .carousel .card.mongodb .box .name,
+.skills .carousel .card.mongodb .box .img {
+  color: var(--mongoColor);
+}
+
+.skills .carousel .card.mongodb .box .name-shadow,
+.skills .carousel .card.mongodb .box .shadow {
+  color: var(--mongoColorL);
+}
+
+/* html */
+.skills .carousel .card.html .box .name,
+.skills .carousel .card.html .box .img {
+  color: var(--htmlColor);
+}
+
+.skills .carousel .card.html .box .name-shadow,
+.skills .carousel .card.html .box .shadow {
+  color: var(--htmlColorL);
+}
+
+/* css */
+.skills .carousel .card.css .box .name,
+.skills .carousel .card.css .box .img {
+  color: var(--cssColor);
+}
+
+.skills .carousel .card.css .box .name-shadow,
+.skills .carousel .card.css .box .shadow {
+  color: var(--cssColorL);
+}
+
+/* js */
+.skills .carousel .card.js .box .name,
+.skills .carousel .card.js .box .img {
+  color: var(--jsColor);
+}
+
+.skills .carousel .card.js .box .name-shadow,
+.skills .carousel .card.js .box .shadow {
+  color: var(--jsColorL);
+}
+
+/* vue */
+.skills .carousel .card.vue .box .name,
+.skills .carousel .card.vue .box .img {
+  color: var(--vueColor);
+}
+
+.skills .carousel .card.vue .box .name-shadow,
+.skills .carousel .card.vue .box .shadow {
+  color: var(--vueColorL);
+}
+
+/* react native */
+.skills .carousel .card.rn .box .name,
+.skills .carousel .card.rn .box .img {
+  color: var(--rnColor);
+}
+
+.skills .carousel .card.rn .box .name-shadow,
+.skills .carousel .card.rn .box .shadow {
+  color: var(--rnColorL);
+}
+
+/* laravel */
+.skills .carousel .card.laravel .box .name,
+.skills .carousel .card.laravel .box .img {
+  color: var(--laravelColor);
+}
+
+.skills .carousel .card.laravel .box .name-shadow,
+.skills .carousel .card.laravel .box .shadow {
+  color: var(--laravelColorL);
+}
+
+.skills .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.skills .owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid var(--primaryColor) !important;
+  transition: all 0.3s ease;
+}
+
+.skills .owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.skills .owl-dot.active,
+.skills .owl-dot:hover {
+  background: var(--primaryColor) !important;
+}
+
+@media (max-width: 947px) {
+  .skills .skills-content .column {
+    width: 100%;
+  }
+}

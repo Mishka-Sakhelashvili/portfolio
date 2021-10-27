@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    rel="stylesheet"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Document</title>
+  <style>
+    .cv {
+      font-family: 'Roboto', sans-serif;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .cv ul {
+      margin: 0;
+    }
+
+    .cv h4,
+    .cv p {
+      margin: 0;
+    }
+
+    .cv li {
+      margin-bottom: 5px;
+    }
+
+
+    .cv .about {
+      padding: 0 20px;
+    }
+
+    .cv .about p {
+      text-indent: 20px;
+    }
+
+
+
+    .cv .projects {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .cv .projects .item {
+      width: 50%;
+      /* min-height: 200px; */
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: justify;
+    }
+
+    .cv .projects .item h4 {
+      margin-bottom: 10px;
+    }
+
+    .cv .projects .item p {
+      margin-bottom: 4px;
+      text-indent: 20px;
+    }
+
+    .cv .projects .item a {
+      cursor: pointer;
+    }
+
+    .cv .visited {
+      padding-left: 20px;
+      font-size: 20px;
+    }
+
+    .cv h3 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .cv h2 {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .cv .projects .item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cv">
+
+    <h2>Mikheil Sakhelashvili - CV</h2>
+
+    <div class="info">
+      <ul>
+        <li><b>Tel:</b> (+995) 555 10 59 75</li>
+        <li><b>E-mail:</b> mishka.sakhelashvili@gmail.com</li>
+        <li><a
+            href="https://mishka-sakhelashvili.github.io/portfolio/"
+            target="_blank"
+          >My Portfolio Website</a></li>
+        <li><a
+            target="_blank"
+            href="https://github.com/Mishka-Sakhelashvili"
+          >Github</a></li>
+        <li><a
+            target="_blank"
+            href="https://www.linkedin.com/in/mishka-sakhelashvili/"
+          >LinkedIn</a> </li>
+      </ul>
+    </div>
+    <div class="about">
+      <h3>About Me</h3>
+      <p>
+        Hi, I’m Mishka. Since beginning my journey as a freelance developer nearly 2 years ago, I've done remote work
+        for agencies, consulted for startups, and collaborated with talented people to create digital products for both
+        business and consumer use. Take a look at my projects below, if you think I’d be a good contact me or visit my
+        portfolio site for more information. <a
+          target="_blank"
+          style="font-size: 20px;"
+          href="https://mishka-sakhelashvili.github.io/portfolio/"
+        >(Portfolio)</a>
+      </p>
+    </div>
+    <br>
+    <h3>My Experience</h3>
+    <div class="projects">
+      <div class="item">
+        <h4>News (Front-End)</h4>
+        <p>
+          The app executes voice commands.
+          Used AlanAi Rest API.
+          The site shows a list of different types of news.
+          Which we can control with both mouse and voice commands.
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/Mishka-Sakhelashvili/React__VoiceMan"
+        >Read Code</a>
+      </div>
+      <div class="item">
+        <h4>COVID-19 (Front-End)</h4>
+        <p>
+          The app shows Covid 19 real-time statistics.
+          It is possible to view different diagrams to better understand the data.
+          We can also find data from different countries.
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/Mishka-Sakhelashvili/React__Covd19"
+        >Read Code</a>
+      </div>
+      <div class="item">
+        <h4>Shop (Front-End)</h4>
+        <p>
+          The app is in the online shopping category.
+          The commerc.js admin panel is used for management.
+          The stripe payment system is installed.
+          The app is a demo version.
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/Mishka-Sakhelashvili/React__Online-Shop-Commerce.js"
+        >Read Code</a>
+      </div>
+      <div class="item">
+        <h4>Chat (Full-Stack)</h4>
+        <p>
+          A real-time chat component.
+          that can be embedded in a variety of websites.
+          Has basic correspondence functionality.
+          Sorts by standard protocol.
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/Mishka-Sakhelashvili/React__Node-ChatApp"
+        >Read Code</a>
+      </div>
+      <div class="item">
+        <h4>Shop (Ejs + Express)</h4>
+        <p>
+          Online store server side rendering.
+          Sign in/ Sign up, has a
+          customer-friendly admin panel.
+          The user manages the products. Also controls various operations (e.g. orders, checkout, payment and
+          etc.)
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/Mishka-Sakhelashvili/Node__Online-Shop"
+        >Read Code</a>
+      </div>
+      <div class="item">
+        <h4>Shop (React + Node)</h4>
+        <p>
+          Has all the features that an online store needs.
+          Customer-friendly admin panel.
+          The user manages the products.
+          Also controls various operations (e.g. orders, checkout, delivery, payment and
+          etc.)
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/Mishka-Sakhelashvili/React__Node__ShopExample"
+        >Read Code</a>
+      </div>
+      <div class="item">
+        <h4>Shop (Mobile)</h4>
+        <p>
+          The application is built on the theme of the online store. Sign in/ Sign up, has a
+          customer-friendly admin panel.
+          The user manages the products. Also controls various operations (e.g. orders, checkout and etc.)
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/Mishka-Sakhelashvili/RN__E-Commerce-App"
+        >Read Code</a>
+      </div>
+      <div class="item">
+        <h4>Cooking (Mobile)</h4>
+        <p>
+          List of different categories of food recipes.
+          Beautiful and simple user interface.
+          Sort by food categories.
+          Automatic distribution of categories.
+          Function to add to favorites by user
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/Mishka-Sakhelashvili/RN__Food-Recipes"
+        >Read Code</a>
+      </div>
+      <div class="item">
+        <h4>Booking (Mobile)</h4>
+        <p>
+          Simplified application for searching people's vacation spots.
+          Has a division into different categories.
+          Review each item and display the reference price
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/Mishka-Sakhelashvili/RN__Booking-UI"
+        >Read Code</a>
+      </div>
+      <div class="item">
+        <h4>Great Places (Mobile)</h4>
+        <p>
+          It is possible to add various large places to the database in the application.
+          Google Maps service integrated.
+          It is possible to take a picture and upload it to the place
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/Mishka-Sakhelashvili/RN__Camera-Map"
+        >Read Code</a>
+      </div>
+    </div>
+    <div class="visited">
+      <p><a
+          target="_blank"
+          href="https://mishka-sakhelashvili.github.io/portfolio/"
+        >Visit my portfolio site to see all the projects</a></p>
+    </div>
+    <br>
+    <h3>Skills</h3>
+    <div class="skills">
+      <ul>
+        <li>CSS (SASS / SCSS / LESS / Material-UI / Styled-component / Bootstrap)</li>
+        <li>JavaScript (React, React Native, Vue, Node, Express, jQuery)</li>
+        <li>PHP (Laravel)</li>
+        <li>Database (MongoDB / Mongoose / SQL / Sequelize)</li>
+        <li>Git, Npm, Yarn, Babel, webpack, REST API and etc</li>
+      </ul>
+    </div>
+    <br>
+    <p>Thanks M.Sakhelashvili</p>
+    <br>
+  </div>
+
+
+</body>
+
+</html>
