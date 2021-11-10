@@ -9,8 +9,8 @@ var primaryColor = "#CC6600";
 var whiteColor = "#fff";
 var colors = [primaryColor, whiteColor, primaryColor, whiteColor, primaryColor];
 // anime text is TEXT variables
-//var TEXT = "My Portfolio";
-var TEXT = "M.Sakhelashvili";
+var TEXT = "My Portfolio";
+//var TEXT = "M.Sakhelashvili";
 if (window.innerWidth < 700) {
   TEXT = "P o r t f o l i o";
 }
