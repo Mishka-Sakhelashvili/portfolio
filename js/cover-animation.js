@@ -78,7 +78,7 @@ function initScene() {
   ww = canvas.width = window.innerWidth;
   wh = canvas.height = window.innerHeight;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.font = "bold " + (ww / 7) + "px sans-serif";
+  ctx.font = "bold " + (ww / 9) + "px sans-serif";
   ctx.textAlign = "center";
   ctx.fillText(TEXT, ww / 2, wh / 2);
   var data = ctx.getImageData(0, 0, ww, wh).data;
